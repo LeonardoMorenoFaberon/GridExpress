@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+:root{
+
+}
+
+
+.container{
+    background-color: #3A630D;
+    display: grid;
+    grid-template-columns: 100px 100px ;
+    grid-auto-rows:100px;
+    justify-content: center;
+    align-content: center;
+    place-content: center;
+    height: 500px;
+    gap: 15px;
+}
+
+.item{
+    background-color: #ADD901;
+    border: 1px solid red;
+    display: grid;
+    
+
+}
+
+.item span{
+    background-color: #62A81E;
+    color: black;
+    height: 50%;
+    width: 33.3333%;
+    justify-self: end;
+    align-self: end;
+    text-align: center;
+    color: white;   
+    
+}

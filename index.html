@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <title>Document</title>
+    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="stylesheet" href="./normalize.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js"></script> -->
+</head>
+<body>
+
+    <a href="./reto1.html">reto1</a>
+
+<div class="contenedor">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</div>
+
+<div class="codigoG2">
+    &nbsp;&nbsp;justify-content: center;  <br>
+    &nbsp;&nbsp;align-content: center;  <br> <br>
+    &nbsp;&nbsp;align-content: reemplaza a las dos anteriores  <br>
+    
+    &nbsp;&nbsp;place-content: center; <br>
+
+    <p>justify-item:  <br>
+     y align-item: <br>
+    trabajan sobre los elementos  internos a la grilla<br>
+    <br>mientras content... <br>
+    justify-content:  <br>
+    align-content:    <br>
+    trabaja sobre toda la grilla </p>
+</div>
+
+<div class="contenedorG2">
+    <div class="itemG2">1</div>
+    <div class="itemG2">2</div>
+    <div class="itemG2">3</div>
+    <div class="itemG2">4</div>
+    <div class="itemG2">5</div>
+    <div class="itemG2">6</div>
+</div>
+
+
+<!-- div.contenedorG3>div*3.itemG3.item${$} -->
+<p class="codeContenedorG3">
+    .contenedorG3{ <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  display:grid; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  background-color: #F86F6F; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-template-columns: repeat(3 , 100px); <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-template-rows:  repeat(3 , 75px); <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  justify-content: center; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  align-content: center; <br>
+      <br>
+    } <br>
+     <br>
+    .itemG3{ <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  background-color: #FF7DD8; <br>
+       &nbsp;&nbsp;&nbsp;&nbsp; border:1px solid #FE9393; <br>
+    } <br>
+    .itemG3-1{ <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  background-color: #4FA8FB; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-column-start:  1; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-column-end:  4; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-row: 1; <br>
+    } <br>
+    .itemG3-2{ <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  background-color: #FF7DD8; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-row: 2/4; <br>
+    } <br>
+    .itemG3-3{ <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  background-color: #FF35C2; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;  grid-area: 2/2/4/4; <br>
+    } 
+</p>
+<div class="contenedorG3"> 
+    <div class="itemG3 itemG3-1">1</div> 
+    <div class="itemG3 itemG3-2">2</div> 
+    <div class="itemG3 itemG3-3">3</div> 
+</div>
+
+
+
+<div class="contenedorG4">
+    <div class="itemG4 itemG4-1">1</div>
+    <div class="itemG4 itemG4-2">2</div>
+    <div class="itemG4 itemG4-3">3</div>
+</div>
+
+<!-- div.reto3>div*8.itemR3.itemR3-${$} -->
+<div class="reto3">
+    <div class="itemR3 itemR3-1">1</div>
+    <div class="itemR3 itemR3-2">2</div>
+    <div class="itemR3 itemR3-3">3</div>
+    <div class="itemR3 itemR3-4">4</div>
+    <div class="itemR3 itemR3-5">5</div>
+    <div class="itemR3 itemR3-6">6</div>
+    <div class="itemR3 itemR3-7">7</div>
+    <!-- <div class="itemR3 itemR3-8">8</div> -->
+</div>
+<div class="quinto">
+    <div class="quinto-code">
+        <p><h2>Funciones Especiales</h2>
+            .contenedorG5{
+                &nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid #e1bee7; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;background-color: #fff1ff; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: grid; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: minmax(30px ,300px) 200px minmax(30px , 250px); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows:repeat(3, auto); <br>
+             <br>
+            } <br>
+            .itemG5{ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid wheat; <br>
+            } 
+        
+        </p>
+    </div>
+<div class="contenedorG5">
+    <div class="itemG5 itemG5-1">Hola soy la celda 1</div>
+    <div class="itemG5 itemG5-2">2</div>
+    <div class="itemG5 itemG5-3">Celda 3</div>
+    <div class="itemG5 itemG5-4">4</div>
+    <div class="itemG5 itemG5-5">5</div>
+    <div class="itemG5 itemG5-6">6</div>
+    <div class="itemG5 itemG5-7">7</div>
+    <div class="itemG5 itemG5-8">8</div>
+    <div class="itemG5 itemG5-9">9</div>
+    <div class="itemG5 itemG5-10">10</div>
+</div>
+</div>
+
+<h2 class="sexto-h2">Keywords especiales  <br>
+    intenta hacer Resize de la pagina horizontalmente y veras</h2>
+<div class="sexto">
+    <p class="sexto-p">
+        .itemG6a{
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; border:1px solid #e1bee7;
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; background-color: #fff1ff;
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; display: grid;
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; <span class="sexto-p__span">grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));</span>
+        <br> }
+    </p>
+    <div class="itemG6a">
+        <div class="itemG6a itemG6a-1">1</div>
+        <div class="itemG6a itemG6a-2">2</div>
+        <div class="itemG6a itemG6a-3">3 33 3 33 333 333 33333 3 3333 33 333 33</div>
+        <div class="itemG6a itemG6a-4">444 4 4 4444 444 4 4 4444 44 4 44444 4 4 4</div>
+    </div>
+</div>
+
+<div class="sexto">    
+    <p class="sexto-p">
+        .itemG6b{
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; border:1px solid #e1bee7;
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; background-color: #fff1ff;
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; display: grid;
+           <br>&nbsp;&nbsp;&nbsp;&nbsp; <span class="sexto-p__span">grid-template-columns: repeat(auto-fill , minmax(100px , 1fr));</span>
+        <br> }
+    </p>
+    <div class="itemG6b">
+        <div class="itemG6b itemG6b-1">1</div>
+        <div class="itemG6b itemG6b-2">2</div>
+        <div class="itemG6b itemG6b-3">3 33 3 33 333 333 33333 3 3333 33 333 33</div>
+        <div class="itemG6b itemG6b-4">444 4 4 4444 444 4 4 4444 44 4 44444 4 4 4</div>
+    </div>
+</div>
+
+
+<!-- <div id="padrejs1">
+
+</div> -->
+
+
+
+
+
+
+<!-- <script src="./js.js"></script> -->
+
+</body>
+</html>

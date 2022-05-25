@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+:root{
+
+}
+
+body{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+}
+.contWhite{
+    margin:20px 0 0 0;
+    width: 60%;
+    padding: 20px 0;
+    font-size: 1.5em;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px ;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.item{
+   position: relative; 
+   background-color: #ADD901;
+   border: 1px solid red;
+}
+.item div{
+    background-color: #8ABA4A;
+    color: #FFFDFF;
+    position: absolute;
+    padding: .5em;
+    bottom: 0px;
+    right: 0px;
+}
+/* //.......................... */

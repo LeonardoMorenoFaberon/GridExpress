@@ -1,0 +1,236 @@
+.contenedor{
+    border:5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    /* gtc100-200-300 */
+    /* grid-template-columns: 100px 200px 300px; */
+    /* grid-template-rows: 100px 200px 300px; */
+
+    /* ............................ */
+    /* cuando no sabemos el numero de filas q habra: */
+    
+    grid-template-rows: 100px 200px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    row-gap: 15px;
+    column-gap: 30px;
+
+}
+
+.item{
+    border: 5px solid #00bcb4;
+    font-size: 4rem;
+}
+
+
+
+/* //........................... */
+
+.codigoG2{
+    margin-top: 20px;
+}
+.contenedorG2{
+    background-color: papayawhip;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 450px;
+    gap: 15px;
+    justify-content: end;
+    align-content: flex-end;
+    justify-items: end;
+    align-items: end;
+
+}
+.itemG2{
+    border: 1px solid red;
+    background-color: aquamarine;
+    padding: 25px;
+}
+
+
+/* ........................... */
+/* ........................... */
+/* ........................... */
+.codeContenedorG3{
+    width: fit-content;
+    background-color: #F86F6F;
+    margin-left: calc(50% - 288px);
+   
+}
+.contenedorG3{
+    display:grid;
+    background-color: #F86F6F;
+    grid-template-columns: repeat(3 , 100px);
+    grid-template-rows:  repeat(3 , 75px);
+    justify-content: center;
+    align-content: center;
+ 
+}
+
+.itemG3{
+    background-color: #FF7DD8;
+    border:1px solid #FE9393;
+}
+.itemG3-1{
+    background-color: #4FA8FB;
+    grid-column-start:  1;
+    grid-column-end:  4;
+    grid-row: 1;
+}
+.itemG3-2{
+    background-color: #FF7DD8;
+    grid-row: 2/4;
+}
+.itemG3-3{
+    background-color: #FF35C2;
+    grid-area: 2/2/4/4;
+}
+
+/* ........................... */
+/* ........................... */
+.contenedorG4{
+    display:grid;
+    background-color: #971111;
+    grid-template-columns: repeat(3 , 100px);
+    grid-template-rows:  repeat(3 , 75px);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+     "header header header"
+     "side main main"
+     "side main main";
+}
+
+.itemG4{
+    background-color: #FF7DD8;
+    border:1px solid #FE9393;
+}
+.itemG4-1{
+    background-color: #4FA8FB;
+    grid-area: header;
+}
+.itemG4-2{
+    background-color: #FF7DD8;
+    grid-area:side;
+}
+.itemG4-3{
+    background-color: #FF35C2;
+    grid-area:main;
+}
+
+/* ........................... */
+/* ........................... */
+.reto3{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 100px);
+
+    
+}
+.itemR3{
+    border:1px solid blue;
+} 
+.itemR3-1{
+    grid-area: 1/1/2/2;
+    background-color: #CCEE3A;
+}
+.itemR3-2{
+    grid-area: 1/2/1/4;
+    background-color: #71BB05;
+}
+.itemR3-3{
+    grid-area: 2/1/3/3;
+    background-color: #268201;
+}
+.itemR3-4{
+    grid-area: 2/3/2/4;
+    background-color: #CCEE3A;
+}
+.itemR3-5{
+    /* realmente no importa */
+    grid-area: 3/1/3/2;   
+    background-color: #CCEE3A;
+}
+.itemR3-6{
+    /* realmente no importa */
+    grid-area: 3/2/3/3;
+    background-color: #71BB05;
+}
+.itemR3-7{
+
+    background-color: #268201;
+}
+
+/* ........................... */
+.quinto{
+     background-color: #fff1ff;
+}
+.contenedorG5{
+    border: 1px solid #e1bee7; 
+    display: grid;
+    grid-template-columns: minmax(30px ,300px) 200px minmax(30px , 250px);
+    grid-template-rows:repeat(3, auto);
+
+}
+.itemG5{
+    border: 1px solid wheat;
+}
+/* ........................... */
+.sexto-h2{
+    background-color: #F86F6F;
+    margin-bottom: 0;
+    text-align: center;
+}
+.sexto{
+    background-color: #F86F6F;
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr) ;
+    /* gap: 20px; */
+}
+.sexto-p{
+    margin:none;
+}
+
+.sexto-p__span{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.itemG6a{
+    border:1px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));
+}
+.itemG6b{
+    border:1px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(100px , 1fr));
+    margin-bottom: 20px;
+}
+
+/* ........................... */
+
+
+
+
+/* .contenedor{display: none;}  
+.codigoG2{display: none;}
+.contenedorG2{display: none;}
+.codeContenedorG3{display: none;} 
+.contenedorG3 {display: none;}
+.contenedorG4{display: none;}
+.reto3{display: none;}
+.quinto{display:none} */
+
+
+
+
+
+
+
+
+
