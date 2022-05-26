@@ -103,3 +103,59 @@ function insertChooser(idPadre , tituloLabel , listIdDataList, optionsArray ){
 insertChooser("padrejs1" ,'Elige tu navegador de esta lista:' , 'broser2' , optionsArray);
 
 
+
+// ..................
+
+let puertaA;
+// let puertaB;
+// let puertaC;
+let aleatorioEsconder;
+let aleatorioElegir;
+let ganas =0;
+let pierdes=0;
+
+
+
+function esconderPremio(){
+    // esconder premio:
+    aleatorioEsconder = Math.random();
+    if(aleatorioEsconder < 1/3){   
+        puertaA =true;   
+        // puertaB =false;   
+        // puertaC =false;
+     }
+    // if(aleatorioEsconder >=1/3 && aleatorioEsconder <2/3){
+    //     puertaA =false;   
+    //     puertaB =true;   
+    //     puertaC =false;
+    // }
+    // if(aleatorioEsconder>=2/3   && aleatorioEsconder < 1 ){
+    //     puertaA =false;   
+    //     puertaB =false;   
+    //     puertaC =true;
+    // }
+}
+
+
+function cambiando(){
+    if(puertaA){
+        //tenias la puerta ganadora y cambias
+        pierdes++;
+    }else{
+       //tenias la puerta perdedora y cambias
+        ganas++;
+    }
+}
+
+
+function jugar(veces){
+    for(let i = 0; i<veces; i++){
+        
+        esconderPremio();
+        cambiando();
+    }    
+
+    console.log("aleatorioEsconder : " + aleatorioEsconder , "pierdesCambiando: "+ pierdes , "ganasCambiando: " + ganas);
+}
+
+jugar(100);
